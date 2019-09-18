@@ -20,10 +20,10 @@ public class Main {
     num3 = input.nextDouble();
 
     double average = (num1 + num2 + num3) / NUMBER_OF_INPUT;
-    double numerator = Math.pow(num1 - average, 2)
-                     + Math.pow(num2 - average, 2)
-                     + Math.pow(num3 - average, 2);
-    double standardDeviation = Math.pow(numerator / NUMBER_OF_INPUT, 0.5);
+    double numerator = Math.sqrt(num1 - average)
+                     + Math.sqrt(num2 - average)
+                     + Math.sqrt(num3 - average);
+    double standardDeviation = Math.sqrt(numerator / NUMBER_OF_INPUT);
 
     System.out.println("The average of these 3 numbers are: " + average);
     System.out.format("The standardDeviation of these 3 numbers are: %.2f",
