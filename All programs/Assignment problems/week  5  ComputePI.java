@@ -25,8 +25,8 @@ public class ComputePI {
 			}
 			else {
 				PI += (double) sign * NUMERATOR / ((middleDenominator - 1)
-												 *  middleDenominator
-												 * (middleDenominator + 1));
+						                 *  middleDenominator
+						                 * (middleDenominator + 1));
 				middleDenominator += MIDDLE_DENOMINATOR_CHANGE;
 				sign = -sign;
 			}
