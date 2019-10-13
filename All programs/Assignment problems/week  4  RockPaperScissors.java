@@ -38,6 +38,9 @@ public class RockPaperScissors {
 		
 		final int NUMBER_OF_TIMES = 5;
 		final int NUMBER_OF_CHOICES = 3;
+		final int ROCK = 1;
+		final int PAPER = 2;
+		final int SCISSORS = 3;
 		
 		Scanner input = new Scanner(System.in);
 		int computerScore = 0;
@@ -52,9 +55,9 @@ public class RockPaperScissors {
 			if (userChoice == computerChoice) {
 				System.out.println("This round was a draw as I chose " + computerChoice + " too");
 			}
-			else if ((userChoice == 1 && computerChoice == 3)
-				  || (userChoice == 2 && computerChoice == 1)
-				  || (userChoice == 3 && computerChoice == 2)) {
+			else if ((userChoice == ROCK && computerChoice == SCISSORS)
+				  || (userChoice == PAPER && computerChoice == ROCK)
+				  || (userChoice == SCISSORS && computerChoice == PAPER)) {
 				System.out.println("You won this round as I chose " + computerChoice);
 				userScore++;
 			}
