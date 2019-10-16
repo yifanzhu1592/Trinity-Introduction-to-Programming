@@ -22,7 +22,11 @@ public class Week6eTest2016 {
 						double x1 = 0;
 						double x2 = 0;
 						
-						if (b * b - 4 * a * c > 0) {
+						if (a == 0) {
+							x1 = -c / b;
+							System.out.println("The roots to this equation is x=" + x1);
+						}
+						else if (b * b - 4 * a * c > 0) {
 							x1 = (-b + Math.sqrt(b * b - 4 * a *c)) / (2 * a);
 							x2 = (-b - Math.sqrt(b * b - 4 * a *c)) / (2 * a);
 							System.out.println("The roots to this equation are x=" + x1 + " and x=" + x2);
@@ -32,7 +36,7 @@ public class Week6eTest2016 {
 							System.out.println("The roots to this equation is x=" + x1);
 						}
 						else {
-							System.out.println("This equation has no roots.");
+							System.out.println("This equation has complex roots.");
 						}
 					}
 					else {
